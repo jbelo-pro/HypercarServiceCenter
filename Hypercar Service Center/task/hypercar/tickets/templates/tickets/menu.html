@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+    {% for ticket_type, ticket_text in menu_options.items %}
+        <a target="_blank" href="/get_ticket/{{ticket_type}}">{{ticket_text}}</a>
+    {% endfor %}
+</body>
+</html>
